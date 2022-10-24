@@ -4,7 +4,7 @@ export default class Validator {
 	}
 
 	validateUsername() {
-		const testNick = /^[^_^0-9^-][\w-]*[^_^0-9^-]$/.test(this.nickname);
+		const testNick = /^[A-Za-z][\w-]*[A-Za-z]$/.test(this.nickname);
 		if (testNick) {
 			return !/[\d]{4,}/.test(this.nickname);
 		}
